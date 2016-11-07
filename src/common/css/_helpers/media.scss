@@ -1,0 +1,11 @@
+$tab-pre: 37.5em;
+$tab: 49.9375em;//799px;
+$pc: 61.25em;//980px;
+$dt-pre: 73.75em; //1180
+$dt: 79.375em;//1270px;
+
+@mixin respond($size) {
+  @media screen and (min-width: #{$size}) {
+    @content;
+  }
+}

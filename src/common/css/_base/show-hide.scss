@@ -1,0 +1,48 @@
+.sp-down {
+  display: block !important;
+
+  &.ilblock { display: inline-block !important; }
+  &.inline { display: inline !important; }
+
+  @include respond($tab) {
+    display: none !important;
+
+    &.ilblock, &.inline {
+      display: none !important;
+    }
+  }
+}
+.tab-down {
+  display: block !important;
+
+  &.ilblock { display: inline-block !important; }
+  &.inline { display: inline !important; }
+
+  @include respond($pc) {
+    display: none !important;
+
+    &.ilblock, &.inline {
+      display: none !important;
+    }
+  }
+}
+.tab-up {
+  display: none !important;
+
+  @include respond($tab) {
+    display: block !important;
+
+    &.ilblock { display: inline-block !important; }
+    &.inline { display: inline !important; }
+  }
+}
+.pc-up {
+  display: none !important;
+
+  @include respond($pc) {
+    display: block !important;
+
+    &.ilblock { display: inline-block !important; }
+    &.inline { display: inline !important; }
+  }
+}
